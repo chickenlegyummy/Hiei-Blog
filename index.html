@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hiei's Coffee | 比叡の喫茶店</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/chickenlegyummy/chickenlegyummy.github.io/refs/heads/main/public/favicon.ico">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<nav class="nav">
+
+<div class="nav-brand">
+
+<h1 data-en="Hiei's Coffee" data-zh_hk="比叡の喫茶店">Hiei's coffee</h1>
+
+</div>
+
+<div class="nav-controls">
+
+
+<div class="search-container">
+
+<input
+
+type="text"
+
+id="tagSearch"
+
+class="tag-search"
+
+data-en="Search by tags..."
+
+data-zh_hk="按標籤搜尋..."
+
+placeholder="Search by tags..."
+
+>
+
+<button id="clearSearch" class="clear-search" aria-label="Clear search">×</button>
+
+</div>
+            <button id="langToggle" class="toggle-btn" aria-label="Toggle language">
+                <span class="toggle-text">EN</span>
+            </button>
+            
+            <button id="themeToggle" class="toggle-btn" aria-label="Toggle theme">
+                <span class="theme-icon">☀️</span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="welcome">
+        <h2 data-en="Welcome to My Blog" data-zh_hk="歡迎來到我的Netflix and Chill Blog">Welcome to My Blog</h2>
+        <p data-en="Brewing thoughts, one post at a time" data-zh_hk="慢慢醞釀想法，一篇一篇地分享">Brewing thoughts, one post at a time</p>
+    </section>
+        <section class="active-tags" id="activeTags" style="display: none;">
+        <h3 data-en="Filtering by:" data-zh_hk="篩選條件：">Filtering by:</h3>
+        <div class="tag-list" id="activeTagsList"></div>
+    </section>
+
+    <section class="posts-container" id="postsContainer">
+    </section>
+
+    <section class="no-results" id="noResults" style="display: none;">
+        <p data-en="No posts found matching your search." data-zh_hk="找不到符合搜尋條件的文章。">No posts found matching your search.</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <p data-en="© 2025 Bobby Li. All Rights Reserved. Made with ☕ and 💻" data-zh_hk="© 2025 Bobby Li. All Rights Reserved. 用 ☕ 和 💻 精心製作">© 2025 Bobby Li. All Rights Reserved. Made with ☕ and 💻</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+[
+
+{
+
+"id": 1,
+
+"title": {
+
+"en": "The First Take",
+
+"zh_hk": "第一次嘗試"
+
+},
+
+"content": {
+
+"en": "This is the first ever post on this blog or even my first take on blogging. Actually, I made this for fun and to record my learning progress in web development and programming. The blogs here are not meant to be serious and to be 'public' in any way. They are just my personal notes and thoughts, so please don't take them too seriously. I will try to write in both English and Chinese, because I made the functionality to support both languages, why not use it? Well that's it for now. See'ya",
+
+"zh_hk": "屌，我想講我文學底唔係幾好，所以中文呢邊我會寫得口語啲，應該係話全程都係用白話。咁基於呢一點呢，我就真係個腦諗到寫咩就寫咩，exactly好似正常講野咁，所以中文呢邊我會解釋清楚啲同expand多少少啦。Well，入正題，呢個係我第一次寫blog，或者話第一次嘗試寫blog。其實呢個blog係我為咗好玩 (返工摸魚)，同埋順便寫下啲template/component比我到時用，例如話個tag searcher同light-dark theme呢啲。咁我都寫左個page出黎就順便記錄下我學web dev同埋programming嘅進度。咁呢個blog上面既野係0認真既，亦都唔係要突登公開既，咁你入得黎呢度一係我叫你入黎 or 真係一個冇野做既廢人 or or or 起底既仆街。BTW 我會試下用英文同中文寫呢個blog (我應該會寫左一邊先再AI translate呢一邊 unless我真係好得閒)，咁我都已經做咗個function，咁點解唔用呢？講完，88你條尾。\n\n\n To 雞哥 : 屌你老母交功課啦仆街"
+
+},
+
+"date": "2025-06-27",
+
+"tags": ["Random"]
+
+}
+]
