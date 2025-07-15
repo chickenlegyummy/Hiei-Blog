@@ -13,6 +13,7 @@
     --border-color: #d7ccc8; /* Light mocha */
     --shadow-light: rgba(109, 78, 55, 0.1);
     --shadow-medium: rgba(109, 78, 55, 0.15);
+    --code-primary: green; /* Code color */
     
     /* Fonts */
     --font-english: 'Open Sans', sans-serif;
@@ -33,6 +34,7 @@
     --border-color: #4a3f35; /* Dark border */
     --shadow-light: rgba(0, 0, 0, 0.2);
     --shadow-medium: rgba(0, 0, 0, 0.3);
+    --code-primary: lightgreen; /* Code color */
 }
 
 /* Base styles */
@@ -343,6 +345,13 @@ body[data-lang="zh_hk"] {
     color: var(--text-muted);
     margin-top: 3rem;
 }
+
+/* Code */
+.code {
+    font-size: 0.9em;
+    color: var(--code-primary);
+}
+
 
 /* Animations */
 @keyframes fadeIn {

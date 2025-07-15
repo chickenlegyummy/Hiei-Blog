@@ -2,13 +2,39 @@
 
 {
 
+"id": 2,
+
+"title": {
+
+"en": "Multiplayer Game Development on the Web with JavaScript",
+
+"zh_hk": "多人遊戲開發 - JavaScript 網頁"
+
+},
+
+"content": {
+
+"en": "So I have been working on a multiplayer game using JavaScript, which is originally just a simple shooting game I made for fun. However, I decided to add multiplayer functionality to it, which turned out to be quite a challenge. I got ideas from working on a course project before in PolyU, COMP2432 - Operating System. The project do I/O between parent and children processes, which is quite similar to how multiplayer games work.\n\n I used Node.js, Express, and Socket.IO for real-time communication between clients. The architecture is quite simple, with a server listening for connections and operations by the players. Which handles the game state and broadcasts updates to all connected clients. <div class=\"code\"> // Broadcast new target to all clients (in server.js)\nio.emit('targetSpawned', target.toNetworkData()); </div> \n\n For example, when a player moves or shoots, it creates a message that is sent to the server, which then updates the game state and sends the updated state in a message to all clients. All the notified clients then rendering the game state, like player positions and actions, targets, and bullets.\n\n<img width=\"70%\" src=\"public/server.webp\"/>\n\n Although the structure is simple, the most challenging part is to ensure that all the I/O communication is done in real-time and synchronized across all clients. There is a crucial part that rendering objects in client-side, sometimes I got duplicated remote players or false positions. To fix them, I had to rewrite the rendering logic than the original SinglePlayer version of the game. Most importantly is to do research online about how others managed to do it.\n\n Here is the github repo link <a style=\"color: var(--text-primary)\" href=\"https://github.com/chickenlegyummy/oiia-threeJS\">Click Me!</a>",
+
+"zh_hk": "我最近一直在用 JavaScript 開發一個多人遊戲，最初只是一個簡單的射擊遊戲，我是為了好玩而做的。但是，我決定為它添加多人功能，這成為了一個相當大的挑戰。我從之前在理工大學的課程項目中獲得了一些靈感，COMP2432 - Operating System。那個項目涉及父子進程之間的 I/O 通信，這與多人遊戲的工作方式非常相似。\n\n 我使用了 Node.js、Express 和 Socket.IO 來實現客戶端之間的實時通信。架構非常簡單，服務器監聽連接和玩家操作，處理遊戲狀態並將更新廣播給所有連接的客戶端。例如，當玩家移動或射擊時，它會創建一條消息發送到服務器，然後服務器更新遊戲狀態並將更新後的狀態以消息形式發送給所有客戶端。<div class=\"code\"> // Broadcast new target to all clients (in server.js)\nio.emit('targetSpawned', target.toNetworkData()); </div> \n\n 所有被通知的客戶端然後渲染遊戲狀態，例如玩家位置和行動、目標和子彈。\n\n<img width=\"70%\" src=\"public/server.webp\"/>\n\n 雖然結構很簡單，但最具挑戰性的部分是確保所有 I/O 通信都是實時完成並在所有客戶端之間同步。有一個關鍵部分是客戶端渲染對象，有時我會遇到重複的遠程玩家或錯誤的位置。為了解決這些問題，我不得不重寫渲染邏輯，而不是原來單人遊戲版本中的邏輯。最重要的是要在線上研究其他人是如何做到這一點的。\n\n 這裡是 GitHub 倉庫鏈接 <a style=\"color: var(--text-primary)\"href=\"https://github.com/chickenlegyummy/oiia-threeJS\">點擊我！</a> \n\n 中文版機翻 by Claude Sonnet 4 可能有點奇怪，請見諒。"
+
+},
+
+"date": "2025-07-15",
+
+"tags": ["JavaScript", "Web Development", "Game Development", "Server"]
+
+},
+
+{
+
 "id": 1,
 
 "title": {
 
 "en": "The First Take",
 
-"zh_hk": "第一次嘗試"
+"zh_hk": "The First Take"
 
 },
 
@@ -16,7 +42,7 @@
 
 "en": "This is the first ever post on this blog or even my first take on blogging. Actually, I made this for fun and to record my learning progress in web development and programming. The blogs here are not meant to be serious and to be 'public' in any way. They are just my personal notes and thoughts, so please don't take them too seriously. I will try to write in both English and Chinese, because I made the functionality to support both languages, why not use it? Well that's it for now. See'ya",
 
-"zh_hk": "屌，我想講我文學底唔係幾好，所以中文呢邊我會寫得口語啲，應該係話全程都係用白話。咁基於呢一點呢，我就真係個腦諗到寫咩就寫咩，exactly好似正常講野咁，所以中文呢邊我會解釋清楚啲同expand多少少啦。Well，入正題，呢個係我第一次寫blog，或者話第一次嘗試寫blog。其實呢個blog係我為咗好玩 (返工摸魚)，同埋順便寫下啲template/component比我到時用，例如話個tag searcher同light-dark theme呢啲。咁我都寫左個page出黎就順便記錄下我學web dev同埋programming嘅進度。咁呢個blog上面既野係0認真既，亦都唔係要突登公開既，咁你入得黎呢度一係我叫你入黎 or 真係一個冇野做既廢人 or or or 起底既仆街。BTW 我會試下用英文同中文寫呢個blog (我應該會寫左一邊先再AI translate呢一邊 unless我真係好得閒)，咁我都已經做咗個function，咁點解唔用呢？講完，88你條尾。\n\n\n To 雞哥 : 屌你老母交功課啦仆街"
+"zh_hk": "我想講我文筆唔係幾好，所以中文呢邊我會寫得口語啲，應該係話全程都係用白話。咁基於呢一點呢，我就真係個腦諗到寫咩就寫咩，exactly好似正常講野咁，所以中文呢邊我會解釋清楚啲同expand多少少啦。Well，入正題，呢個係我第一次寫blog，或者話第一次嘗試寫blog。其實呢個blog係我為咗好玩 (返工摸魚)，同埋順便寫下啲template/component比我到時用，例如話個tag searcher同light-dark theme呢啲。咁我都寫左個page出黎就順便記錄下我學web dev同埋programming嘅進度。咁呢個blog上面既野係0認真既，亦都唔係要突登公開既，咁你入得黎呢度一係我叫你入黎 or 真係一個冇野做既廢人 or 起底既仆街。BTW 我會試下用英文同中文寫呢個blog (我應該會寫左一邊先再AI translate呢一邊 unless我真係好得閒)，咁我都已經做咗個function，咁點解唔用呢？講完，88你條尾。"
 
 },
 
