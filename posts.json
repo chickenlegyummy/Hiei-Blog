@@ -1,4 +1,29 @@
 [
+{
+
+"id": 3,
+
+"title": {
+
+"en": "Backend Practice",
+
+"zh_hk": "後端實踐"
+
+},
+
+"content": {
+
+"en": "It's been 2 months for me in doing backend development. I would say it is pretty fun. Maybe I am amused by the fun of debugging, just like why it doesn't show anything or why there are no updates in the database. If I do not have an internship this summer, I won't be able to learn such things. So, let's get back to our topic today. \n\n This weekend, I attempted (without using AI) to do a backend service template for my future use, and I found some interesting theories or facts. First, do the configuration in tsconfig, \"module\": \"nodenext\", or you will see red lines.\n Second, be careful in handling messages. Even if you give a type to your message, it will still be \"Buffer\" type. \n\n <div class=\"code\">if (Buffer.isBuffer(message)) { // Remark: It basically send buffer to here OwOb\nmsg = message.toString(); // Convert Buffer to string\n} else {\nmsg = JSON.stringify(message);\n}</div> Therefore, I added this code to convert the buffer back to string type first.\n Third, I did some research on the background of WebSocket. So ws is not http, while http is only single channel, ws is dual channel\nhttp: end => end\n ws: end <=> end.\n It is designed to not do request and response as we did in Express. That increases the flexibility and lowers the difficulties. While Socket.io is just a wrapper of ws, and is simpler. Btw, they are all protocols actually, but simulated by JavaScript and make them usable in Node. \n\n And that's what I got today so far, I will still continue this one as my weekend toy or something, since it is really useful LMAO. See ya.\n\n Here is the github repo link <a style=\"color: var(--text-primary)\" href=\"https://github.com/chickenlegyummy/ts-socket-service\">Click Me!</a>",
+
+"zh_hk": "我從事後端開發已經兩個月了。我覺得這挺有趣的。或許我被除錯的樂趣所吸引，就像為什麼什麼都沒顯示，或者為什麼資料庫沒有更新。如果今年夏天我沒有實習，我就不會學到這些東西。好吧，讓我們回到今天的話題。\n\n這個週末，我嘗試（沒有使用 AI）為將來使用製作一個後端服務模板，結果發現了一些有趣的理論或事實。首先，在 tsconfig 中進行配置，設置 \"module\": \"nodenext\"，否則你會看到紅線報錯。其次，要小心處理消息。即使你為消息指定了類型，它仍然會是 \"Buffer\" 類型。\n\n```javascript\nif (Buffer.isBuffer(message)) { // 備註：基本上這裏會收到 Buffer OwOb\n  msg = message.toString(); // 將 Buffer 轉換為字符串\n} else {\n  msg = JSON.stringify(message);\n}\n```\n因此，我加了這段代碼來先將 Buffer 轉換回字符串類型。\n\n第三，我研究了一下 WebSocket 的背景知識。WebSocket 並不是 HTTP，HTTP 是單向通道，而 WebSocket 是雙向通道：\n- HTTP：end => end\n- WebSocket：end <=> end\n\nWebSocket 的設計不是像 Express 那樣進行請求和響應，這增加了靈活性並降低了難度。而 Socket.io 只是 WebSocket 的一個封裝，更加簡單。順便說一句，它們實際上都是協議，但通過 JavaScript 模擬並在 Node 中實現可用。\n\n這就是我目前為止的收穫，我會繼續把這個當作我的週末玩具之類的，因為它真的很有用 LOL。下次見！ \n\n Here is the github repo link <a style=\"color: var(--text-primary)\" href=\"https://github.com/chickenlegyummy/ts-socket-service\">Click Me!</a>\n\n機翻 by Grok 3"
+
+},
+
+"date": "2025-08-09",
+
+"tags": ["TypeScript", "JavaScript", "Web Development", "Server", "Backend"]
+
+},
 
 {
 
